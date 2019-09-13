@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script>
+			function largest()
+			{
+				var a, b, c;
+				a = Number(document.getElementById("x").value);
+			 	b = Number(document.getElementById("y").value);
+				c = Number(document.getElementById("z").value);
+
+				if(a>b && a>c)
+				{
+					window.alert(a+" is greatest");
+				}
+				else if(b>a && b>c)
+				{
+					window.alert(b+" is greatst");
+				}
+				else if(c>b && c>a)
+				{
+					window.alert(c+" is greatest");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		Calculate largest among three numbers
+		<br>
+		Enter numbers<br>
+                <input type="text" id="x"></input><br>
+		<input type="text" id="y"></input><br>
+		<input type="text" id="z"></input><br>
+		<button onclick="largest()">OK</button>
+	</body>
+</html>

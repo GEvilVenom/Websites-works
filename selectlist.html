@@ -1,0 +1,25 @@
+ <html>
+<head>
+<script type = "text/javascript">
+function getValue(){  
+var t = document.getElementById("txt");
+t.value = '';
+var x=document.getElementById("sel");
+for(var i =0; i < x.options.length; i++)
+{if(x.options[i].selected ==true)
+{
+    t.value += x.options[i].value + ' ';
+}}}
+</script>
+</head>
+<body>
+<select id="sel">
+<option value="India">India</option>
+<option value="China">China</option>
+<option value="Japan">Japan</option>
+<option value="Israel">Israel</option>
+</select>
+<input type="text" id = "txt" onClick="getValue()"/>
+<input type="button" value="Show" onClick="getValue()"/>
+</body>
+</html>
